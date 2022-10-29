@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>        
+    <div class="slds-m-around_medium">
+        <div>            
+                <lightning-radio-group name="originofconsultphone"
+                            label="Origin of consult Phone"
+                            options={originconsultoptions}
+                            value={originconsultvalue}
+                            type="radio"></lightning-radio-group>    
+                <lightning-combobox
+                            name="languageLine"
+                            label="Does this caller need language line services?"
+                            value={languageLinevalue}
+                            options={languageLineoptions}
+                            onchange={handlelanguageLineChange} ></lightning-combobox> 
+                <lightning-input type="checkbox" label="Associate this call with case" name="AssociateCallCase" checked disabled required></lightning-input>
+                <lightning-input type="text" label="Incoming Phone Number" value={IncomingPhoneNumberValue} disabled></lightning-input>
+        </div>
+        <div slot="footer">
+            <div class="slds-m-vertical_x-small slds-grid">
+                <div class="slds-col_bump-left">
+                    <lightning-button variant="brand" label="Next" title="Next" onclick={handleNext} class="slds-m-left_x-small"></lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </lightning-card> 
+</template>

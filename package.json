@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/harish-iia.lwc-l9tp7cie",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 6sT8eRd4vf2QLHRMz1KL --open"
+  }
+}
